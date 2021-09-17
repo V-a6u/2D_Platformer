@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/8Bit Platformer Loop.ogg-65f42c3fb4bf57f696a7c9935b5d455a.oggstr"
+
+[deps]
+
+source_file="res://Audio/8Bit Platformer Loop.ogg"
+dest_files=[ "res://.import/8Bit Platformer Loop.ogg-65f42c3fb4bf57f696a7c9935b5d455a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

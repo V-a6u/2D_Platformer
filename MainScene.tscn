@@ -1,0 +1,269 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://mainPlayer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://UI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Tile.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://PhilosoperStone.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Prize.tscn" type="PackedScene" id=6]
+[ext_resource path="res://CameraController.gd" type="Script" id=7]
+[ext_resource path="res://Gate.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Audio/8Bit Platformer Loop.ogg" type="AudioStream" id=9]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource( 2 )]
+margin_left = -16.0
+margin_top = -24.0
+margin_right = -16.0
+margin_bottom = -24.0
+
+[node name="mainPlayer" parent="." instance=ExtResource( 1 )]
+position = Vector2( 64, 120 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Tile" parent="." instance=ExtResource( 3 )]
+position = Vector2( 24, 560 )
+
+[node name="Tile2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 88, 560 )
+
+[node name="Tile5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 152, 560 )
+
+[node name="Tile6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 216, 560 )
+
+[node name="Tile7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 280, 560 )
+
+[node name="Tile8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 344, 560 )
+
+[node name="Tile9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 408, 560 )
+
+[node name="Tile10" parent="." instance=ExtResource( 3 )]
+position = Vector2( 472, 560 )
+
+[node name="Tile11" parent="." instance=ExtResource( 3 )]
+position = Vector2( 536, 560 )
+
+[node name="Tile12" parent="." instance=ExtResource( 3 )]
+position = Vector2( 600, 560 )
+
+[node name="Tile13" parent="." instance=ExtResource( 3 )]
+position = Vector2( 664, 560 )
+
+[node name="Tile14" parent="." instance=ExtResource( 3 )]
+position = Vector2( 728, 560 )
+
+[node name="Tile15" parent="." instance=ExtResource( 3 )]
+position = Vector2( 792, 560 )
+
+[node name="Tile16" parent="." instance=ExtResource( 3 )]
+position = Vector2( 856, 560 )
+
+[node name="Tile17" parent="." instance=ExtResource( 3 )]
+position = Vector2( 920, 560 )
+
+[node name="Tile18" parent="." instance=ExtResource( 3 )]
+position = Vector2( 984, 560 )
+
+[node name="Tile19" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1048, 560 )
+
+[node name="Tile20" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 1112, 560 )
+
+[node name="Tile23" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( -232, 560 )
+
+[node name="Tile40" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( -232, 496 )
+
+[node name="Tile41" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( -232, 432 )
+
+[node name="Tile42" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( -232, 368 )
+
+[node name="Tile43" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( -232, 312 )
+
+[node name="Tile44" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( -232, 248 )
+
+[node name="Tile45" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( -232, 184 )
+
+[node name="Tile46" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( -232, 120 )
+
+[node name="Tile55" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( -232, 56 )
+
+[node name="Tile47" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 1112, 496 )
+
+[node name="Tile48" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 1112, 432 )
+
+[node name="Tile49" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 1112, 368 )
+
+[node name="Tile50" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 1112, 312 )
+
+[node name="Tile51" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 1112, 248 )
+
+[node name="Tile52" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 1112, 184 )
+
+[node name="Tile53" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 1112, 120 )
+
+[node name="Tile54" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 1112, 56 )
+
+[node name="Tile24" parent="." instance=ExtResource( 3 )]
+position = Vector2( -168, 560 )
+
+[node name="Gate" parent="." instance=ExtResource( 8 )]
+position = Vector2( 880, 32 )
+
+[node name="Tile25" parent="." instance=ExtResource( 3 )]
+position = Vector2( -104, 560 )
+
+[node name="Tile26" parent="." instance=ExtResource( 3 )]
+position = Vector2( -40, 560 )
+
+[node name="Tile27" parent="." instance=ExtResource( 3 )]
+position = Vector2( 512, 320 )
+
+[node name="Tile28" parent="." instance=ExtResource( 3 )]
+position = Vector2( 576, 320 )
+
+[node name="Tile37" parent="." instance=ExtResource( 3 )]
+position = Vector2( 352, 136 )
+
+[node name="Tile38" parent="." instance=ExtResource( 3 )]
+position = Vector2( 416, 136 )
+
+[node name="Tile29" parent="." instance=ExtResource( 3 )]
+position = Vector2( 640, 320 )
+
+[node name="Tile30" parent="." instance=ExtResource( 3 )]
+position = Vector2( 872, 136 )
+
+[node name="Tile31" parent="." instance=ExtResource( 3 )]
+position = Vector2( 936, 136 )
+
+[node name="Tile32" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1000, 136 )
+
+[node name="Tile3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 48, 192 )
+
+[node name="Tile4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 112, 192 )
+
+[node name="Tile21" parent="." instance=ExtResource( 3 )]
+position = Vector2( 352, 496 )
+
+[node name="Tile22" parent="." instance=ExtResource( 3 )]
+position = Vector2( 808, 496 )
+
+[node name="Tile33" parent="." instance=ExtResource( 3 )]
+position = Vector2( 776, 264.868 )
+
+[node name="Tile39" parent="." instance=ExtResource( 3 )]
+position = Vector2( 616, 104 )
+
+[node name="Tile36" parent="." instance=ExtResource( 3 )]
+position = Vector2( 992, 416 )
+
+[node name="Tile34" parent="." instance=ExtResource( 3 )]
+position = Vector2( 224, 352 )
+
+[node name="Tile35" parent="." instance=ExtResource( 3 )]
+position = Vector2( 32, 496 )
+
+[node name="Enemy" parent="." instance=ExtResource( 4 )]
+position = Vector2( 408, 496 )
+speed = 250
+moveDist = 350
+
+[node name="PhilosoperStone" parent="." instance=ExtResource( 5 )]
+position = Vector2( 224, 280 )
+
+[node name="PhilosoperStone2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 32, 416 )
+
+[node name="PhilosoperStone3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 376, 64 )
+
+[node name="PhilosoperStone4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 576, 248 )
+
+[node name="PhilosoperStone5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 480, 440 )
+
+[node name="PhilosoperStone6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 584, 440 )
+
+[node name="PhilosoperStone7" parent="." instance=ExtResource( 5 )]
+position = Vector2( 688, 440 )
+
+[node name="PhilosoperStone8" parent="." instance=ExtResource( 5 )]
+position = Vector2( 616, 32 )
+
+[node name="PhilosoperStone9" parent="." instance=ExtResource( 5 )]
+position = Vector2( 984, 336 )
+
+[node name="PhilosoperStone10" parent="." instance=ExtResource( 5 )]
+position = Vector2( 904, 472 )
+
+[node name="PhilosoperStone11" parent="." instance=ExtResource( 5 )]
+position = Vector2( 776, 192 )
+
+[node name="Prize" parent="." instance=ExtResource( 6 )]
+position = Vector2( 928, 56 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 512, 296 )
+current = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+script = ExtResource( 7 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -15.0
+autoplay = true

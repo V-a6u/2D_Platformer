@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Coin.png" type="Texture" id=1]
+
+[node name="Coin" type="StaticBody2D"]
+
+[node name="Coin" type="Sprite" parent="."]
+position = Vector2( 0, -3.8147e-06 )
+scale = Vector2( 2.375, 2.375 )
+texture = ExtResource( 1 )
